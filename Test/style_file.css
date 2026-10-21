@@ -1,0 +1,112 @@
+/* Reset CSS cơ bản */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Khung lớn chứa toàn bộ slideshow */
+.slideshow {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Ẩn các nút chọn radio gốc đi */
+.slideshow input[type="radio"] {
+  display: none;
+}
+
+/* Khung chứa các slide xếp hàng ngang */
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/* Mỗi slide chiếm chính xác 1 phần 3 chiều rộng của .slides */
+.slide {
+  width: 33.3333%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* --- TÍCH HỢP ẢNH ĐẸP KHÔNG LO BỊ LỖI (MÃ HOÁ TEXT) --- */
+/* Slide 1: Ảnh phong cảnh hoàng hôn đỏ */
+.slide.s1 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='700' height='400' viewBox='0 0 700 400'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23f12711'/%3E%3Cstop offset='100%25' stop-color='%23f5af19'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23g1)'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='30' fill='white'%3ESlide 1 - Sẵn Sàng%3C/text%3E%3C/svg%3E");
+}
+
+/* Slide 2: Ảnh phong cảnh cực quang xanh dương */
+.slide.s2 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='700' height='400' viewBox='0 0 700 400'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232193b0'/%3E%3Cstop offset='100%25' stop-color='%236dd5ed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23g2)'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='30' fill='white'%3ESlide 2 - Sẵn Sàng%3C/text%3E%3C/svg%3E");
+}
+
+/* Slide 3: Ảnh phong cảnh rừng cây tím mộng mơ */
+.slide.s3 {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='700' height='400' viewBox='0 0 700 400'%3E%3Cdefs%3E%3ClinearGradient id='g3' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23cc2b5e'/%3E%3Cstop offset='100%25' stop-color='%23753a88'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23g3)'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='30' fill='white'%3ESlide 3 - Sẵn Sàng%3C/text%3E%3C/svg%3E");
+}
+
+/* Thanh điều hướng chứa các chấm tròn */
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+/* Định dạng các chấm tròn điều hướng */
+.bar {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng khi di chuột qua chấm tròn */
+.bar:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- LOGIC ĐIỀU KHIỂN DỊCH CHUYỂN SLIDE --- */
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-33.3333%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-66.6666%);
+}
+
+/* --- ĐỔI MÀU CHẤM TRÒN KHI SLIDE ĐƯỢC CHỌN --- */
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+  background-color: #ffffff;
+  transform: scale(1.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}

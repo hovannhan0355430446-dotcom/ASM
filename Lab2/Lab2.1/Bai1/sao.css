@@ -1,0 +1,20 @@
+em {
+    display: block;
+    margin-bottom: 1em;
+}
+
+strong {
+    color: brown;
+}
+
+.doan1 {
+    color: red;
+}
+
+.doan2 {
+    color: blue;
+}
+
+.doan3 {
+    color: green;
+}

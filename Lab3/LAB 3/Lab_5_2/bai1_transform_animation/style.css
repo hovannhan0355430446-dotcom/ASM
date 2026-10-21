@@ -1,0 +1,254 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.6%;
+}
+
+body {
+    font-family: "Catamaran", sans-serif;
+    margin: 0;
+}
+
+/* Nav button & toggle */
+#menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    font-size: 30px;
+    cursor: pointer;
+    background: #eee;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.close-icon {
+    display: none;
+}
+
+.nav {
+    background-color: #e5e5e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    display: none;
+    z-index: 999;
+    padding: 60px 20px;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* MĂ n hĂ¬nh 1: Nav transition & transform */
+.nav__link:link, .nav__link:visited {
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: calc(00.7rem - 0.4rem);
+    color: #3a3e3b;
+    display: block;
+    padding: 1rem 0;
+    transition: all 0.3s linear;
+}
+
+.nav__link:hover {
+    background: #beed8c;
+    color: #678e3e;
+    padding-left: 1.5rem;
+    border-left: 0.25rem solid #678e3e;
+    transform: translateX(10%);
+}
+
+.nav__link:active {
+    transform: translateX(10%) scale(0.95);
+}
+
+#menu-toggle:checked ~ .nav {
+    display: block;
+}
+
+#menu-toggle:checked ~ .menu-button .open-icon {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu-button .close-icon {
+    display: inline-block;
+}
+
+/* MĂ n hĂ¬nh 2: Header animations */
+.header {
+    background-image: url('./images/tea-main.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.heading_first {
+    font-family: "Grand Hotel", cursive;
+    font-size: 3rem;
+    color: #698f3f;
+    letter-spacing: calc(00.7rem * 1.2);
+    margin: 0;
+}
+
+.heading_first--animation {
+    animation: slideInRight 5s ease-in-out;
+}
+
+.heading_primary {
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 6rem;
+    letter-spacing: 0.7rem;
+    margin: 0;
+    animation: slideInLeft 5s ease-in-out;
+}
+
+.header__btn:link, .header__btn:visited, .header__btn {
+    animation: show 2s 1s linear;
+    animation-fill-mode: backwards;
+    letter-spacing: 0.7rem;
+}
+
+.btn {
+    color: #3a3e3b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #698f3f;
+    outline: 3px solid #698f3f;
+    outline-offset: 4px;
+    padding: 1rem 1rem;
+    display: inline-block;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #4b6630;
+    outline-color: #4b6630;
+    outline-width: 5px;
+    color: #e5e5e5;
+}
+
+/* Keyframes */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0.1;
+        transform: translateX(-100%);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateX(25%);
+    }
+    75% {
+        opacity: 0.9;
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0.1;
+        transform: translateX(100%);
+    }
+    50% {
+        opacity: 0.7;
+        transform: translateX(-25%);
+    }
+    75% {
+        opacity: 0.9;
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    25% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* MĂ n hĂ¬nh 3: About image hover */
+#about {
+    display: flex;
+    padding: 4rem 2rem;
+    align-items: center;
+}
+
+.about_left {
+    width: 50%;
+    overflow: hidden;
+    border: 7px solid #698f3f;
+    border-radius: 22px;
+    background-color: #698f3f;
+}
+
+.about__img {
+    width: 100%;
+    display: block;
+    transition: all 0.3s linear;
+}
+
+.about_left:hover .about__img {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+.about_right {
+    width: 50%;
+    padding-left: 3rem;
+}
+
+.heading_second {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    color: #3a3e3b;
+    margin: 0;
+}
+
+.about__text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}

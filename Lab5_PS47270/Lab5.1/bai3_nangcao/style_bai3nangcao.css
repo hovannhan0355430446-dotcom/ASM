@@ -1,0 +1,59 @@
+#menu-toggel {
+  display: none;
+}
+
+.nav {
+  display: none;
+
+  min-height: 8vh;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding-top: 70px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  display: none;
+  z-index: 999;
+}
+
+.nav a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav a:hover {
+  background-color: #ccc;
+}
+
+#menu-toggel:checked ~ .nav {
+  display: block;
+}
+
+.icon-close {
+  display: none;
+}
+
+#menu-toggel:checked ~ label .icon-open {
+  display: none;
+}
+
+#menu-toggel:checked ~ label .icon-close {
+  display: block;
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  font-size: 30px;
+  cursor: pointer;
+  background: #eee;
+  padding: 5px 12px;
+  border-radius: 5px;
+}

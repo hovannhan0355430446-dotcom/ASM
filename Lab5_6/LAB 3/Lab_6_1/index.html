@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6.1 - CSS Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-button">
+        <span class="open-icon">&#9776;</span>
+        <span class="close-icon">&#10005;</span>
+    </label>
+
+    <div class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#product" class="nav__link">Products</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contacts</a></li>
+        </ul>
+    </div>
+
+    <!-- MĂ n hĂ¬nh 1: Header flexbox -->
+    <div class="header">
+        <h2 class="heading_first heading_first--animation">Over one hunred flavors of tea</h2>
+        <h1 class="heading_primary">Specially crafted tea</h1>
+        <a href="#about" class="btn header__btn">Explore</a>
+    </div>
+
+    <!-- MĂ n hĂ¬nh 2: Feature items column flexbox -->
+    <div id="features">
+        <div class="feature_item">
+            <h4 class="feature_title">Made with love</h4>
+            <p class="feature_text">Our tea is made with love, from the collection of the leaves to the brewing.</p>
+        </div>
+        <div class="feature_item">
+            <h4 class="feature_title">Relaxation</h4>
+            <p class="feature_text">Set aside anxiety and relax after a hard day with a cup of hot tea in your hands.</p>
+        </div>
+        <div class="feature_item">
+            <h4 class="feature_title">Energy</h4>
+            <p class="feature_text">Our tea will energize you with vitamins and invigorate the rest of the day.</p>
+        </div>
+        <div class="feature_item">
+            <h4 class="feature_title">Family recipe</h4>
+            <p class="feature_text">All our recipes are passed down from generation to generation for a long time.</p>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="about_left">
+            <img src="./images/tea-main.jpg" alt="About Us" class="about__img">
+        </div>
+        <div class="about_right">
+            <div class="about__content">
+                <h3 class="heading_first">About Our</h3>
+                <h2 class="heading_second">Tea station</h2>
+                <p class="about__text">
+                    Once upon a time we only had a couple of teapots and enjoyed tea
+                    only with our family. Over time, we were able to afford to buy a
+                    small tea plantation.
+                </p>
+                <a href="#features" class="btn">Learn more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

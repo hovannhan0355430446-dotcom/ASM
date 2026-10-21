@@ -1,0 +1,146 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.6%;
+}
+
+body {
+    font-family: "Catamaran", sans-serif;
+    margin: 0;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    font-size: 30px;
+    cursor: pointer;
+    background: #eee;
+    padding: 5px 12px;
+    border-radius: 5px;
+    line-height: 1;
+}
+
+.close-icon {
+    display: none;
+}
+
+.nav {
+    min-height: 8vh;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 60px 20px 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    display: none;
+    z-index: 999;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__link {
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: calc(00.7rem - 0.4rem);
+    color: #3a3e3b;
+    display: block;
+    padding: 1rem 0;
+}
+
+/* Checked states */
+#menu-toggle:checked ~ .nav {
+    display: block;
+}
+
+#menu-toggle:checked ~ .menu-button .open-icon {
+    display: none;
+}
+
+#menu-toggle:checked ~ .menu-button .close-icon {
+    display: inline-block;
+}
+
+/* Header */
+.header {
+    background-image: url('./images/tea-main.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header h2 {
+    font-family: "Grand Hotel", cursive;
+    font-size: 3rem;
+    color: #698f3f;
+    letter-spacing: calc(00.7rem * 1.2);
+    margin: 0;
+}
+
+.header h1 {
+    font-family: "Catamaran", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 6rem;
+    letter-spacing: 0.7rem;
+    margin: 0;
+}
+
+.btn {
+    color: #3a3e3b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #698f3f;
+    outline: 3px solid #698f3f;
+    outline-offset: 4px;
+    padding: 1rem 1rem;
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+
+/* Features */
+#features {
+    display: flex;
+}
+
+.feature_item {
+    width: 25%;
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.feature_title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: calc(0.7rem - 0.2rem);
+    color: #698f3f;
+}
+
+.feature_text {
+    font-size: 1.6rem;
+    color: #3a3e3b;
+}

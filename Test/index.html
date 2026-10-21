@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow CSS Thuần</title>
+    <style>
+        .slideshow-container {
+            max-width: 600px;
+            height: 400px;
+            margin: 50px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .slide-wrapper {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slideAnimation 9s infinite ease-in-out;
+        }
+
+        .slide-wrapper img {
+            width: 33.333%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes slideAnimation {
+            0%, 25% {
+                transform: translateX(0);
+            }
+            33%, 58% {
+                transform: translateX(-33.333%);
+            }
+            66%, 91% {
+                transform: translateX(-66.666%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="slideshow-container">
+        <div class="slide-wrapper">
+            <img src="feat-quiz.svg" alt="Ảnh 1">
+            <img src="feat-quiz.svg" alt="Ảnh 2">
+            <img src="feat-quiz.svg" alt="Ảnh 3">
+        </div>
+    </div>
+
+</body>
+</html>
