@@ -2360,6 +2360,9 @@ footer .hb-footer-main > * {
 }
 .hb-header .nav-links a:hover,
 .hb-header .nav-links a.active { color: var(--green); }
+body:has(.hb-home):not(:has(#cach-hoat-dong:target)):not(:has(#bang-gia:target)) .hb-header .nav-links a[href="index.html#danh-cho-ban"],
+body:has(#cach-hoat-dong:target) .hb-header .nav-links a[href="index.html#cach-hoat-dong"],
+body:has(#bang-gia:target) .hb-header .nav-links a[href="index.html#bang-gia"] { color: var(--green); }
 .hb-header .nav-auth { display: none; }
 .hb-header .nav-cta { display: flex; flex: 0 0 auto; align-items: center; gap: 12px; }
 .hb-header .nav-cta .btn { min-height: 43px; padding: 10px 16px; font-size: .82rem; white-space: nowrap; }
