@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="HocBot là không gian học tập giúp bạn đọc tài liệu, hỏi bài, ghi nhớ và ôn tập theo một quy trình rõ ràng.">
+  <title>HocBot — Một không gian cho mọi việc học</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect width=%2240%22 height=%2240%22 rx=%2212%22 fill=%22%233f3eed%22/><path d=%22M11 12h8v16h-8zm10 0h8v16h-8z%22 fill=%22white%22/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261022-cleanup6">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <header class="site-header hb-header">
+  <div class="container nav-row">
+    <a href="index.html" class="logo hb-logo" aria-label="HocBot trang chủ"><span class="hb-logo-mark">h</span>Hoc<span>Bot</span></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Mở hoặc đóng menu điều hướng" aria-controls="primary-navigation">
+    <nav id="primary-navigation" class="hb-primary-nav" aria-label="Điều hướng chính">
+      <ul class="nav-links">
+      <li><a href="index.html#danh-cho-ban" class="active" aria-current="page">Dành cho bạn</a></li>
+      <li><a href="tinh-nang.html#tinh-nang">Tính năng</a></li>
+      <li><a href="index.html#cach-hoat-dong">Cách hoạt động</a></li>
+      <li><a href="index.html#bang-gia">Bảng giá</a></li>
+      <li><a href="lien-he.html">Liên hệ</a></li>
+      <li class="nav-auth"><a href="dang-ky.html">Đăng nhập</a></li>
+    </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="dang-ky.html" class="btn btn-primary">Bắt đầu miễn phí <span aria-hidden="true">→</span></a>
+      <label for="nav-toggle" class="nav-toggle-btn"><span aria-hidden="true">☰</span><span class="hb-visually-hidden">Mở hoặc đóng menu</span></label>
+    </div>
+  </div>
+</header>
+
+  <main id="main" class="home-page hb-home">
+    <section class="hb-hero" id="home">
+      <div class="container hb-hero-grid">
+        <div class="hb-hero-copy">
+          <p class="hb-eyebrow"><span class="hb-eyebrow-dot"></span> Không gian học tập cùng AI</p>
+          <h1>Mọi kiến thức.<br><span>Một không<br class="hb-mobile-break"> gian học.</span></h1>
+          <p class="hb-hero-lead">Đưa tài liệu môn học vào HocBot để hỏi điều chưa rõ, nắm ý chính và ôn tập có trọng tâm — tất cả trong cùng một mạch học.</p>
+          <div class="hb-hero-actions">
+            <a href="dang-ky.html" class="btn btn-primary">Bắt đầu miễn phí <span aria-hidden="true">→</span></a>
+            <a href="#cong-cu" class="hb-text-link">Khám phá công cụ <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hb-hero-assurance"><span><i>✓</i> Hỏi bằng tiếng Việt</span><span><i>✓</i> Theo sát tài liệu môn học</span></div>
+        </div>
+
+        <div class="hb-hero-stage" aria-label="Minh hoạ không gian học tập HocBot">
+          <div class="hb-stage-orbit hb-orbit-one"></div><div class="hb-stage-orbit hb-orbit-two"></div>
+          <div class="hb-floating-label hb-label-course"><span class="hb-mini-icon hb-mini-purple">▤</span><span><b>Môn học của bạn</b><small>Được sắp xếp gọn gàng</small></span></div>
+          <div class="hb-app-window">
+            <div class="hb-app-sidebar">
+              <div class="hb-app-logo">h</div>
+              <span class="hb-side-icon is-active">⌂</span><span class="hb-side-icon">▤</span><span class="hb-side-icon">◷</span><span class="hb-side-icon">▦</span>
+              <span class="hb-side-profile">MA</span>
+            </div>
+            <div class="hb-app-main">
+              <div class="hb-app-topbar"><span>Không gian học tập</span><span class="hb-topbar-status"><i></i> Đã lưu</span></div>
+              <div class="hb-app-content">
+                <div class="hb-app-welcome"><small>THỨ HAI, 20 THÁNG 10</small><h2>Chào Mai, hôm nay bạn muốn học gì?</h2></div>
+                <div class="hb-app-course"><span class="hb-course-monogram">KT</span><span><b>Kinh tế vi mô</b><small>Chương 04 · Độ co giãn của cầu</small></span><span class="hb-app-more">•••</span></div>
+                <div class="hb-user-prompt">Giải thích độ co giãn của cầu bằng một ví dụ dễ hiểu.</div>
+                <div class="hb-ai-response">
+                  <div class="hb-response-heading"><span class="hb-response-logo">h</span><b>HocBot giải thích</b><small>Vừa xong</small></div>
+                  <p>Độ co giãn cho biết lượng cầu thay đổi mạnh đến đâu khi giá thay đổi. Nếu giá tăng 10% và lượng mua giảm 20%, độ co giãn là <strong>−2</strong>.</p>
+                  <div class="hb-response-actions"><span>＋ Tạo flashcard</span><span>↗ Hỏi tiếp</span></div>
+                </div>
+                <div class="hb-app-input"><span>Hỏi tiếp về bài học này…</span><b>↑</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="hb-floating-label hb-label-study"><span class="hb-study-ring">✓</span><span><b>Ôn tập theo chương</b><small>Chủ động xem lại kiến thức</small></span></div>
+          <div class="hb-stage-caption"><span></span> Từ bài giảng đến buổi ôn tập</div>
+        </div>
+      </div>
+      <div class="container hb-discipline-bar">
+        <span class="hb-discipline-label">Một nơi cho nhiều môn học</span>
+        <div><span>Kinh tế</span><span>Kỹ thuật</span><span>Ngoại ngữ</span><span>Sư phạm</span><span>Khoa học xã hội</span></div>
+      </div>
+    </section>
+
+    <section class="hb-audience section" id="danh-cho-ban">
+      <div class="container">
+        <div class="hb-section-heading hb-heading-split">
+          <div><p class="hb-eyebrow">Bắt đầu từ việc bạn đang làm</p><h2>Học tập có nhiều nhịp.<br><span>HocBot theo kịp từng nhịp.</span></h2></div>
+          <p>Từ một khái niệm khó hiểu đến cả học kỳ nhiều môn, chọn đúng điểm bắt đầu rồi tiếp tục theo cách phù hợp với mình.</p>
+        </div>
+        <div class="hb-audience-grid">
+          <a class="hb-audience-card" href="tinh-nang.html#feature-chat">
+            <div class="hb-audience-top"><span class="hb-audience-icon hb-ico-violet">⌕</span><span class="hb-card-arrow">↗</span></div>
+            <p class="hb-card-index">01 / ĐANG HỌC</p><h3>Gỡ rối một phần kiến thức</h3><p>Hỏi lại khái niệm, công thức hoặc bước giải mà bạn chưa nắm chắc.</p><span class="hb-card-link">Dùng trợ lý học tập <b>→</b></span>
+          </a>
+          <a class="hb-audience-card hb-audience-featured" href="tinh-nang.html#feature-course">
+            <div class="hb-audience-top"><span class="hb-audience-icon hb-ico-blue">▤</span><span class="hb-card-arrow">↗</span></div>
+            <p class="hb-card-index">02 / NHIỀU TÀI LIỆU</p><h3>Sắp xếp bài giảng vào một nơi</h3><p>Đưa slide, ghi chú và giáo trình về đúng môn học để dễ tìm và hỏi lại.</p><span class="hb-card-link">Khám phá không gian môn học <b>→</b></span>
+          </a>
+          <a class="hb-audience-card" href="tinh-nang.html#feature-review">
+            <div class="hb-audience-top"><span class="hb-audience-icon hb-ico-cyan">✳</span><span class="hb-card-arrow">↗</span></div>
+            <p class="hb-card-index">03 / CHUẨN BỊ KIỂM TRA</p><h3>Ôn tập chủ động hơn</h3><p>Chuyển nội dung cần nhớ thành flashcard và câu hỏi để tự kiểm tra.</p><span class="hb-card-link">Xem công cụ ôn tập <b>→</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hb-product-intro section" id="cong-cu">
+      <div class="container">
+        <div class="hb-centered-heading">
+          <p class="hb-eyebrow">Bộ công cụ học tập</p>
+          <h2>Từ bài giảng đến sự thấu hiểu.</h2>
+          <p>Mỗi công cụ đảm nhận một phần của việc học. Bạn có thể dùng riêng lẻ hoặc nối chúng thành một quy trình liền mạch.</p>
+        </div>
+        <div class="hb-product-pills" aria-label="Các công cụ HocBot"><span><i>01</i> Không gian môn học</span><span><i>02</i> Trợ lý AI</span><span><i>03</i> Tóm tắt tài liệu</span><span><i>04</i> Ôn tập &amp; luyện tập</span><span><i>05</i> Viết &amp; nghiên cứu</span></div>
+      </div>
+    </section>
+
+    <section class="hb-feature-stack">
+      <div class="container">
+        <article class="hb-feature-row">
+          <div class="hb-feature-copy"><p class="hb-feature-index"><span>01</span> KHÔNG GIAN MÔN HỌC</p><h3>Mỗi môn học, một chỗ để bắt đầu.</h3><p>Gom tài liệu, câu hỏi và nội dung cần xem lại theo từng môn. Khi quay lại học, bạn không phải lần tìm trong nhiều ứng dụng khác nhau.</p><ul class="hb-check-list"><li>Sắp xếp nội dung theo môn và chương</li><li>Giữ mạch học tập giữa các buổi</li><li>Tìm lại phần cần đọc hoặc hỏi tiếp</li></ul><a href="tinh-nang.html#feature-course" class="hb-text-link">Tìm hiểu cách tổ chức môn học <span>→</span></a></div>
+          <div class="hb-feature-visual hb-course-visual" aria-label="Minh hoạ danh sách môn học">
+            <div class="hb-visual-window"><div class="hb-visual-top"><span class="hb-window-dots"><i></i><i></i><i></i></span><span>Không gian của Mai</span><span class="hb-visual-top-action">＋ Môn học mới</span></div>
+              <div class="hb-course-layout"><aside class="hb-course-nav"><b>HỌC KỲ 1</b><span class="is-current"><i class="hb-course-dot dot-violet"></i>Kinh tế vi mô<small>Chương 04</small></span><span><i class="hb-course-dot dot-blue"></i>Toán cao cấp<small>Chương 02</small></span><span><i class="hb-course-dot dot-cyan"></i>Tiếng Anh học thuật<small>Unit 06</small></span><span><i class="hb-course-dot dot-orange"></i>Phương pháp nghiên cứu<small>Chương 01</small></span></aside>
+                <div class="hb-course-panel"><div class="hb-course-title"><small>MÔN HỌC / KINH TẾ VI MÔ</small><h4>Chào Mai, tiếp tục từ đâu?</h4><p>Tài liệu và ghi chú gần đây của bạn</p></div><div class="hb-course-doc"><span class="hb-file-icon">PDF</span><span><b>Chương 04 · Cung và cầu</b><small>Slide bài giảng · 24 trang</small></span><span class="hb-doc-time">Hôm qua</span></div><div class="hb-course-doc"><span class="hb-file-icon hb-file-blue">DOC</span><span><b>Bài tập ôn chương 3</b><small>Ghi chú cá nhân · 6 mục</small></span><span class="hb-doc-time">18 thg 10</span></div><div class="hb-course-resume"><span class="hb-resume-icon">↗</span><span><b>Tiếp tục bài đang học</b><small>Độ co giãn của cầu · mục 4.2</small></span><span class="hb-resume-arrow">→</span></div></div>
+              </div>
+            </div>
+            <div class="hb-visual-note hb-note-top"><span class="hb-note-icon">▤</span><span><b>4 môn học</b><small>Được gom theo học kỳ</small></span></div>
+          </div>
+        </article>
+
+        <article class="hb-feature-row hb-feature-reverse">
+          <div class="hb-feature-copy"><p class="hb-feature-index"><span>02</span> TRỢ LÝ HỌC TẬP AI</p><h3>Hỏi đến khi ý tưởng trở nên sáng rõ.</h3><p>Đặt câu hỏi bằng lời của bạn. HocBot có thể diễn giải lại khái niệm, chỉ ra từng bước và đưa một ví dụ gần với nội dung đang học.</p><ul class="hb-check-list"><li>Giải thích theo nhiều cách diễn đạt</li><li>Hỏi tiếp ngay trong ngữ cảnh môn học</li><li>Yêu cầu ví dụ hoặc lời giải từng bước</li></ul><a href="tinh-nang.html#feature-chat" class="hb-text-link">Khám phá trợ lý AI <span>→</span></a></div>
+          <div class="hb-feature-visual hb-chat-visual" aria-label="Minh hoạ cuộc trò chuyện với HocBot">
+            <div class="hb-chat-window"><div class="hb-chat-header"><span class="hb-bot-avatar">h</span><span><b>HocBot</b><small>Đang học · Kinh tế vi mô</small></span><span class="hb-chat-menu">•••</span></div><div class="hb-chat-context"><span class="hb-context-file">PDF</span><span>Đang tham chiếu: <b>Chương 04 · Cung và cầu</b></span><span>⌄</span></div>
+              <div class="hb-chat-thread"><div class="hb-chat-question">Độ co giãn của cầu là gì? Cho mình một ví dụ dễ hình dung.</div><div class="hb-chat-reply"><span class="hb-reply-label"><i></i> GIẢI THÍCH TỪ TÀI LIỆU CỦA BẠN</span><p>Độ co giãn của cầu đo mức độ lượng mua thay đổi khi giá thay đổi. Có thể hình dung như sau:</p><div class="hb-chat-example"><b>Ví dụ</b><span>Giá một món ăn vặt tăng 10%, lượng mua giảm 20% → cầu phản ứng khá mạnh với giá.</span></div><p>Bạn muốn mình giải thích tiếp bằng công thức hay thêm một ví dụ khác?</p><div class="hb-chat-tools"><span>＋ Tạo flashcard</span><span>↻ Giải thích lại</span><span>↗</span></div></div></div>
+              <div class="hb-chat-input"><span>Hỏi tiếp về chương này…</span><b>↑</b></div>
+            </div>
+            <div class="hb-visual-note hb-note-chat"><span class="hb-note-icon hb-note-spark">✳</span><span><b>Giữ đúng mạch bài</b><small>Hỏi thêm mà không mất ngữ cảnh</small></span></div>
+          </div>
+        </article>
+
+        <article class="hb-feature-row">
+          <div class="hb-feature-copy"><p class="hb-feature-index"><span>03</span> TÓM TẮT TÀI LIỆU</p><h3>Tài liệu dài. Ý chính hiện ra rõ ràng.</h3><p>Bắt đầu từ slide hoặc giáo trình của môn học. Xem lại cấu trúc chương, khái niệm quan trọng và nội dung nên ghi nhớ.</p><ul class="hb-check-list"><li>Rút ra các ý chính theo chủ đề</li><li>Giữ thuật ngữ trong ngữ cảnh bài học</li><li>Chuyển phần cần nhớ thành flashcard</li></ul><a href="tinh-nang.html#feature-summary" class="hb-text-link">Xem cách tóm tắt tài liệu <span>→</span></a></div>
+          <div class="hb-feature-visual hb-summary-visual" aria-label="Minh hoạ bản tóm tắt tài liệu">
+            <div class="hb-summary-board"><div class="hb-summary-toolbar"><span class="hb-file-icon">PDF</span><b>Chuong_04_Cung_va_Cau.pdf</b><span>24 trang</span><span class="hb-toolbar-more">•••</span></div><div class="hb-summary-body"><div class="hb-summary-document"><small>TÓM TẮT CHƯƠNG 04</small><h4>Cung, cầu và độ co giãn</h4><p class="hb-summary-intro">Nội dung chính của chương được hệ thống theo các khái niệm và mối liên hệ quan trọng.</p><div class="hb-summary-topic"><span>01</span><div><b>Cung và cầu thị trường</b><small>Giá cân bằng hình thành từ tương tác giữa người mua và người bán.</small></div></div><div class="hb-summary-topic"><span>02</span><div><b>Độ co giãn của cầu</b><small>Đo phản ứng của lượng cầu trước sự thay đổi của giá.</small></div></div><div class="hb-summary-topic"><span>03</span><div><b>Ứng dụng trong thực tế</b><small>So sánh hàng thiết yếu và hàng có nhiều sản phẩm thay thế.</small></div></div></div><aside class="hb-summary-aside"><b>TRONG CHƯƠNG NÀY</b><span class="hb-summary-aside-line"></span><span class="hb-summary-aside-line short"></span><i></i><span class="hb-summary-aside-line"></span><span class="hb-summary-aside-line mid"></span><div class="hb-summary-flash"><span>✳</span><span><b>8 flashcard</b><small>Sẵn sàng ôn tập</small></span><span>→</span></div></aside></div></div>
+          </div>
+        </article>
+
+        <article class="hb-feature-row hb-feature-reverse">
+          <div class="hb-feature-copy"><p class="hb-feature-index"><span>04</span> ÔN TẬP &amp; LUYỆN TẬP</p><h3>Tự kiểm tra để biết mình đã hiểu đến đâu.</h3><p>Tạo câu hỏi từ nội dung đang học, làm thử rồi quay lại đúng phần kiến thức còn chưa chắc.</p><ul class="hb-check-list"><li>Luyện theo chương hoặc chủ đề</li><li>Thấy lời giải thích sau mỗi câu</li><li>Ôn lại theo những phần cần củng cố</li></ul><a href="tinh-nang.html#feature-review" class="hb-text-link">Khám phá công cụ ôn tập <span>→</span></a></div>
+          <div class="hb-feature-visual hb-quiz-visual" aria-label="Minh hoạ bài luyện tập">
+            <div class="hb-quiz-window"><div class="hb-quiz-head"><span><i></i> LUYỆN TẬP · CHƯƠNG 04</span><span>CÂU 06 <b>/ 10</b></span></div><div class="hb-quiz-progress"><i></i></div><div class="hb-quiz-body"><div class="hb-quiz-count">CÂU HỎI TRẮC NGHIỆM</div><h4>Yếu tố nào có thể làm đường cầu dịch chuyển?</h4><div class="hb-answer-option"><i>A</i><span>Giá của chính mặt hàng đó</span></div><div class="hb-answer-option is-correct"><i>B</i><span>Thu nhập của người tiêu dùng</span><b>✓</b></div><div class="hb-answer-option"><i>C</i><span>Chi phí sản xuất của doanh nghiệp</span></div><div class="hb-answer-option"><i>D</i><span>Số lượng người bán</span></div><div class="hb-answer-explain"><b>Chính xác</b><span>Thu nhập có thể làm thay đổi lượng cầu ở mọi mức giá.</span><a href="tinh-nang.html#feature-review">Xem giải thích đầy đủ ↗</a></div></div></div>
+            <div class="hb-quiz-sticker"><span class="hb-sticker-check">✓</span><span><b>Đã nắm ý chính</b><small>Tiếp tục câu tiếp theo</small></span></div>
+          </div>
+        </article>
+
+        <article class="hb-feature-row">
+          <div class="hb-feature-copy"><p class="hb-feature-index"><span>05</span> VIẾT &amp; NGHIÊN CỨU</p><h3>Phát triển bài viết mà vẫn giữ ý của bạn.</h3><p>Sắp xếp luận điểm, dựng dàn ý và rà soát độ rõ ràng trước khi hoàn thiện. Bạn quyết định hướng đi và nội dung cuối cùng.</p><ul class="hb-check-list"><li>Gợi ý bố cục theo đề bài</li><li>Nhìn ra đoạn lặp hoặc thiếu liên kết</li><li>Chỉnh diễn đạt, giữ nguyên quan điểm</li></ul><a href="tinh-nang.html#feature-writing" class="hb-text-link">Tìm hiểu công cụ viết <span>→</span></a></div>
+          <div class="hb-feature-visual hb-outline-visual" aria-label="Minh hoạ dàn ý bài viết">
+            <div class="hb-outline-window"><div class="hb-outline-top"><span>ĐỀ CƯƠNG TIỂU LUẬN</span><span class="hb-outline-saved"><i></i> Đã lưu</span><span>•••</span></div><div class="hb-outline-content"><div class="hb-outline-title"><small>CHỦ ĐỀ NGHIÊN CỨU</small><h4>Tác động của chuyển đổi số trong giáo dục đại học</h4><span>Gợi ý dàn ý · 4 phần</span></div><div class="hb-outline-item"><b>01</b><span><strong>Mở đầu</strong><small>Bối cảnh và câu hỏi nghiên cứu</small></span><i>⌄</i></div><div class="hb-outline-item is-open"><b>02</b><span><strong>Cơ sở lý luận</strong><small>Khái niệm chuyển đổi số · Khung phân tích</small></span><i>⌃</i></div><div class="hb-outline-sub">2.1 Khái niệm và phạm vi<br>2.2 Các yếu tố ảnh hưởng<br>2.3 Mối liên hệ với trải nghiệm học tập</div><div class="hb-outline-item"><b>03</b><span><strong>Thực trạng và phân tích</strong><small>Luận điểm chính và dẫn chứng</small></span><i>⌄</i></div><div class="hb-outline-item"><b>04</b><span><strong>Kết luận</strong><small>Nhận định và hướng đề xuất</small></span><i>⌄</i></div></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="hb-how section" id="cach-hoat-dong">
+      <div class="container">
+        <div class="hb-centered-heading"><p class="hb-eyebrow">Chỉ với ba bước</p><h2>Bắt đầu từ bài học đang ở trước mặt bạn.</h2><p>Không cần đổi cách học. Hãy mở HocBot từ việc bạn vốn đang làm.</p></div>
+        <div class="hb-step-grid">
+          <article><div class="hb-step-top"><span>01</span><i class="hb-step-icon">↗</i></div><h3>Chọn môn học</h3><p>Tạo một không gian cho môn đang học hoặc bắt đầu bằng câu hỏi đầu tiên.</p><span class="hb-step-line"></span></article>
+          <article><div class="hb-step-top"><span>02</span><i class="hb-step-icon hb-step-icon-blue">▤</i></div><h3>Đưa tài liệu vào</h3><p>Thêm bài giảng, slide hoặc ghi chú để làm rõ đúng phần bạn đang đọc.</p><span class="hb-step-line"></span></article>
+          <article><div class="hb-step-top"><span>03</span><i class="hb-step-icon hb-step-icon-cyan">✳</i></div><h3>Hỏi, học và ôn lại</h3><p>Tiếp tục hội thoại, tạo nội dung cần nhớ rồi tự kiểm tra kiến thức.</p><span class="hb-step-line"></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hb-study-flow section">
+      <div class="container">
+        <div class="hb-section-heading hb-heading-split">
+          <div><p class="hb-eyebrow">Một quy trình học liền mạch</p><h2>Tài liệu riêng.<br><span>Nhịp học riêng.</span></h2></div>
+          <p>Việc học không dừng ở một câu trả lời. HocBot đưa bạn từ lúc tiếp nhận bài mới đến khi tự tin xem lại kiến thức.</p>
+        </div>
+        <div class="hb-flow-grid">
+          <article class="hb-flow-card"><span class="hb-flow-number">01</span><div class="hb-flow-illustration hb-flow-files"><i class="hb-flow-page"></i><i class="hb-flow-page"></i><i class="hb-flow-page main"></i><span>PDF</span></div><h3>Đưa tài liệu về đúng môn</h3><p>Thêm slide, file đọc và ghi chú vào một không gian có thể quay lại bất cứ lúc nào.</p><a href="tinh-nang.html#feature-course">Sắp xếp tài liệu <b>→</b></a></article>
+          <article class="hb-flow-card"><span class="hb-flow-number">02</span><div class="hb-flow-illustration hb-flow-chat"><span class="hb-flow-bubble">Mình chưa hiểu chỗ này</span><span class="hb-flow-bubble answer">Mình cùng xem từng bước nhé.</span><i>h</i></div><h3>Làm rõ phần còn vướng</h3><p>Hỏi tiếp, xin ví dụ hoặc yêu cầu giải thích chậm hơn theo đúng ngữ cảnh.</p><a href="tinh-nang.html#feature-chat">Hỏi trợ lý AI <b>→</b></a></article>
+          <article class="hb-flow-card"><span class="hb-flow-number">03</span><div class="hb-flow-illustration hb-flow-cards"><span><b>Khái niệm</b><small>Độ co giãn của cầu</small></span><span><b>Flashcard 04</b><small>Thử nhớ lại ý chính</small></span></div><h3>Ôn lại theo cách chủ động</h3><p>Biến điều vừa học thành flashcard và câu hỏi để tự kiểm tra sau đó.</p><a href="tinh-nang.html#feature-review">Tạo nội dung ôn tập <b>→</b></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hb-benefits section">
+      <div class="container hb-benefit-layout">
+        <div class="hb-benefit-copy"><p class="hb-eyebrow">Dùng AI có mục đích</p><h2>HocBot hỗ trợ bạn tiến bộ.<br><span>Việc học vẫn là của bạn.</span></h2><p>AI có thể giúp bạn nhìn vấn đề theo một cách khác. Bạn vẫn là người kiểm tra thông tin, lựa chọn lập luận và hoàn thiện bài làm.</p><a class="hb-light-link" href="gioi-thieu.html">Tìm hiểu cách HocBot tiếp cận việc học <span>→</span></a></div>
+        <div class="hb-benefit-list">
+          <article><span>01</span><div><b>Bắt đầu từ tài liệu bạn đang dùng</b><p>Đặt câu hỏi trên nền nội dung môn học, thay vì nhận câu trả lời rời rạc.</p></div><i>↗</i></article>
+          <article><span>02</span><div><b>Hỏi tiếp cho đến khi rõ</b><p>Yêu cầu ví dụ, diễn giải đơn giản hơn hoặc xem lời giải theo từng bước.</p></div><i>↗</i></article>
+          <article><span>03</span><div><b>Ôn lại điều quan trọng</b><p>Tạo flashcard và câu hỏi luyện tập từ phần bạn vừa học.</p></div><i>↗</i></article>
+          <article><span>04</span><div><b>Tự quyết định điều sẽ nộp</b><p>Gợi ý của AI là điểm tham khảo; nội dung cuối cùng vẫn do bạn hoàn thiện.</p></div><i>↗</i></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hb-use-cases section">
+      <div class="container">
+        <div class="hb-centered-heading"><p class="hb-eyebrow">Một vài tình huống học tập</p><h2>Vào đúng việc. Đi tiếp từ đó.</h2><p>Các ví dụ dưới đây minh hoạ cách bạn có thể kết hợp công cụ trong một buổi học.</p></div>
+        <div class="hb-use-grid">
+          <article class="hb-use-card"><div class="hb-use-image hb-use-image-notes"><span class="hb-use-tag">TRƯỚC BUỔI HỌC</span><div class="hb-note-sheet"><small>GHI CHÚ · CHƯƠNG 04</small><b>Cung, cầu và thị trường</b><i></i><i></i><i class="short"></i><span>3 ý cần xem trước</span></div><div class="hb-use-stamp">01</div></div><div class="hb-use-body"><span>ĐỌC TRƯỚC</span><h3>Nắm nhanh nội dung của chương mới</h3><p>Xem cấu trúc bài, nhận diện khái niệm chính và ghi lại điều cần hỏi trên lớp.</p><a href="tinh-nang.html#feature-summary">Bắt đầu từ tài liệu <b>↗</b></a></div></article>
+          <article class="hb-use-card"><div class="hb-use-image hb-use-image-question"><span class="hb-use-tag">KHI ĐANG HỌC</span><div class="hb-question-card"><span>HỎI HOCBOT</span><b>Vì sao đường cầu<br>dịch chuyển?</b><i>↗</i></div><div class="hb-question-answer">Thu nhập · thị hiếu<br>· giá hàng liên quan</div><div class="hb-use-stamp">02</div></div><div class="hb-use-body"><span>LÀM RÕ</span><h3>Giải quyết đúng chỗ còn vướng</h3><p>Hỏi theo cách bạn nghĩ, nhận một lời giải thích có ví dụ và tiếp tục hỏi nếu cần.</p><a href="tinh-nang.html#feature-chat">Đặt câu hỏi đầu tiên <b>↗</b></a></div></article>
+          <article class="hb-use-card"><div class="hb-use-image hb-use-image-review"><span class="hb-use-tag">TRƯỚC KỲ THI</span><div class="hb-review-card"><div><small>ÔN TẬP CHƯƠNG 04</small><b>6 / 10</b></div><span><i></i></span><p>Độ co giãn của cầu</p><div class="hb-review-check">✓</div></div><div class="hb-use-stamp">03</div></div><div class="hb-use-body"><span>TỰ KIỂM TRA</span><h3>Biết phần nào cần ôn lại</h3><p>Luyện câu hỏi theo chủ đề, đọc lời giải thích và xem lại những phần chưa chắc.</p><a href="tinh-nang.html#feature-review">Khám phá công cụ luyện tập <b>↗</b></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hb-stories section" aria-labelledby="hb-stories-title">
+      <div class="container">
+        <div class="hb-stories-heading">
+          <div>
+            <p class="hb-eyebrow">6 TÌNH HUỐNG MINH HOẠ</p>
+            <h2 id="hb-stories-title">Một vài cách HocBot có thể đồng hành cùng việc học.</h2>
+          </div>
+          <p>Ảnh là ảnh minh hoạ. Những lời kể dưới đây được tạo cho bản demo, không phải đánh giá hay xác nhận từ khách hàng HocBot.</p>
+        </div>
+        <div class="hb-stories-grid">
+          <article class="hb-story-card">
+            <div class="hb-story-photo">
+              <img src="https://images.unsplash.com/photo-1693938973614-c4d37eb2cd30?auto=format&amp;fit=crop&amp;crop=faces&amp;w=800&amp;h=520&amp;q=82" alt="Ảnh minh hoạ sinh viên học trong thư viện" loading="lazy">
+              <span>Ảnh minh hoạ</span>
+            </div>
+            <div class="hb-story-copy">
+              <span class="hb-story-label">LỜI KỂ MÔ PHỎNG · ĐỌC TRƯỚC</span>
+              <h3>Bắt nhịp với một chương mới</h3>
+              <div class="hb-story-info"><span>NGỮ CẢNH</span><b>Trước giờ lên lớp · Chương mới</b></div>
+              <p>“Mình xem qua ý chính trước buổi học, rồi ghi lại những khái niệm cần hỏi kỹ hơn trên lớp.”</p>
+              <a href="https://unsplash.com/photos/a-woman-sitting-in-front-of-a-laptop-computer-in-a-library-k2y7XcI8CYc" target="_blank" rel="noopener noreferrer">Ảnh của Vitaly Mazur trên Unsplash <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="hb-story-card">
+            <div class="hb-story-photo">
+              <img src="https://images.unsplash.com/photo-1759984782211-3a02ca78e6ac?auto=format&amp;fit=crop&amp;crop=faces&amp;w=800&amp;h=520&amp;q=82" alt="Ảnh minh hoạ sinh viên ghi chú khi học" loading="lazy">
+              <span>Ảnh minh hoạ</span>
+            </div>
+            <div class="hb-story-copy">
+              <span class="hb-story-label">LỜI KỂ MÔ PHỎNG · HỎI BÀI</span>
+              <h3>Làm rõ phần đang vướng</h3>
+              <div class="hb-story-info"><span>NGỮ CẢNH</span><b>Đang học · Kinh tế vi mô</b></div>
+              <p>“Mình hỏi theo cách hiểu của mình, xem lời giải từng bước rồi hỏi tiếp ở chỗ chưa thông.”</p>
+              <a href="https://unsplash.com/photos/a-young-woman-studying-and-writing-notes-at-a-desk-Juj-Mi2b0DA" target="_blank" rel="noopener noreferrer">Ảnh của Julio Lopez trên Unsplash <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="hb-story-card">
+            <div class="hb-story-photo">
+              <img src="https://images.unsplash.com/photo-1652703683924-2409f8ae2fbb?auto=format&amp;fit=crop&amp;crop=faces&amp;w=800&amp;h=520&amp;q=82" alt="Ảnh minh hoạ sinh viên sử dụng máy tính khi học" loading="lazy">
+              <span>Ảnh minh hoạ</span>
+            </div>
+            <div class="hb-story-copy">
+              <span class="hb-story-label">LỜI KỂ MÔ PHỎNG · ÔN TẬP</span>
+              <h3>Quay lại đúng phần cần ôn</h3>
+              <div class="hb-story-info"><span>NGỮ CẢNH</span><b>Ôn trước kỳ kiểm tra · Bộ thẻ 8 câu</b></div>
+              <p>“Mình tự kiểm tra sau khi đọc, biết phần nào đã nhớ và phần nào nên xem lại thêm.”</p>
+              <a href="https://unsplash.com/photos/a-man-sitting-at-a-desk-using-a-laptop-computer-i3vvpzei10E" target="_blank" rel="noopener noreferrer">Ảnh của Nenyasha Manzvera trên Unsplash <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="hb-story-card">
+            <div class="hb-story-photo">
+              <img src="https://images.unsplash.com/photo-1758611971270-89ce7ed506e1?auto=format&amp;fit=crop&amp;crop=faces&amp;w=800&amp;h=520&amp;q=82" alt="Ảnh minh hoạ người học ghi chú bên máy tính" loading="lazy">
+              <span>Ảnh minh hoạ</span>
+            </div>
+            <div class="hb-story-copy">
+              <span class="hb-story-label">LỜI KỂ MÔ PHỎNG · FLASHCARD</span>
+              <h3>Biến phần cần nhớ thành câu hỏi</h3>
+              <div class="hb-story-info"><span>NGỮ CẢNH</span><b>Sau buổi học · Ôn theo chủ đề</b></div>
+              <p>“Mình chia nội dung thành câu hỏi nhỏ để tự kiểm tra sau buổi học, thay vì chỉ đọc lại ghi chú.”</p>
+              <a href="https://unsplash.com/photos/man-working-on-a-laptop-at-a-desk-l_pGKO3rVx4/" target="_blank" rel="noopener noreferrer">Ảnh của Vitaly Gariev trên Unsplash <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="hb-story-card">
+            <div class="hb-story-photo">
+              <img src="https://images.unsplash.com/photo-1753613648131-f8189bf05bcf?auto=format&amp;fit=crop&amp;crop=faces&amp;w=800&amp;h=520&amp;q=82" alt="Ảnh minh hoạ người học làm việc với tài liệu trên laptop" loading="lazy">
+              <span>Ảnh minh hoạ</span>
+            </div>
+            <div class="hb-story-copy">
+              <span class="hb-story-label">LỜI KỂ MÔ PHỎNG · HỎI TIẾP</span>
+              <h3>Tiếp tục từ đúng mạch bài đang học</h3>
+              <div class="hb-story-info"><span>NGỮ CẢNH</span><b>Trong buổi học · Hỏi theo tài liệu</b></div>
+              <p>“Mình có thể hỏi tiếp ngay chỗ chưa rõ, giữ câu trả lời trong cùng chủ đề đang đọc.”</p>
+              <a href="https://unsplash.com/photos/a-person-is-working-on-a-laptop-with-data-D26FDIOwUnA" target="_blank" rel="noopener noreferrer">Ảnh của Hasnain Ayaz trên Unsplash <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="hb-story-card">
+            <div class="hb-story-photo">
+              <img src="https://images.unsplash.com/photo-1758685848208-e108b6af94cc?auto=format&amp;fit=crop&amp;crop=faces&amp;w=800&amp;h=520&amp;q=82" alt="Ảnh minh hoạ giảng viên bên laptop trong lớp học" loading="lazy">
+              <span>Ảnh minh hoạ</span>
+            </div>
+            <div class="hb-story-copy">
+              <span class="hb-story-label">LỜI KỂ MÔ PHỎNG · VIẾT BÀI</span>
+              <h3>Dựng dàn ý rồi hoàn thiện theo cách của mình</h3>
+              <div class="hb-story-info"><span>NGỮ CẢNH</span><b>Chuẩn bị bài · Lập dàn ý</b></div>
+              <p>“Mình phác cấu trúc trước, sau đó tự phát triển lập luận và chỉnh lại bằng giọng văn của mình.”</p>
+              <a href="https://unsplash.com/photos/woman-working-on-a-laptop-in-front-of-a-chalkboard-CBztr5_8Hso" target="_blank" rel="noopener noreferrer">Ảnh của Vitaly Gariev trên Unsplash <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="hb-start section" id="bang-gia">
+      <div class="container">
+        <div class="hb-centered-heading"><p class="hb-eyebrow">Lựa chọn cách bắt đầu</p><h2>Bắt đầu miễn phí.<br><span>Thêm công cụ khi bạn cần.</span></h2><p>Khám phá HocBot từ những việc học quen thuộc, rồi chọn cách sử dụng phù hợp với mình.</p></div>
+        <div class="hb-start-grid">
+          <article class="hb-start-card"><div class="hb-start-plan"><span class="hb-plan-symbol">01</span><span class="hb-plan-label">BẮT ĐẦU</span></div><h3>Trải nghiệm HocBot</h3><p class="hb-start-desc">Làm quen với không gian học tập và các công cụ cốt lõi.</p><div class="hb-start-price">Miễn phí</div><ul><li>Tạo không gian môn học</li><li>Hỏi đáp về nội dung đang học</li><li>Khám phá cách tổ chức tài liệu</li></ul><a href="dang-ky.html" class="btn btn-outline btn-block">Tạo tài khoản <span>→</span></a><small>Không cần thẻ thanh toán để bắt đầu</small></article>
+          <article class="hb-start-card is-highlight"><span class="hb-start-ribbon">DÀNH CHO VIỆC HỌC HẰNG NGÀY</span><div class="hb-start-plan"><span class="hb-plan-symbol">02</span><span class="hb-plan-label">CÁ NHÂN</span></div><h3>Học theo nhịp của bạn</h3><p class="hb-start-desc">Kết hợp tài liệu, trợ lý AI và công cụ ôn tập trong một quy trình.</p><div class="hb-start-price">Gói cá nhân</div><ul><li>Hỏi và làm rõ nội dung môn học</li><li>Tóm tắt và xem lại bài giảng</li><li>Tạo nội dung luyện tập cá nhân</li></ul><a href="dang-ky.html" class="btn btn-primary btn-block">Khám phá lựa chọn <span>→</span></a><small>Thông tin gói hiển thị khi đăng ký</small></article>
+          <article class="hb-start-card"><div class="hb-start-plan"><span class="hb-plan-symbol">03</span><span class="hb-plan-label">NHÓM HỌC</span></div><h3>Cùng học, cùng tiến bộ</h3><p class="hb-start-desc">Một điểm bắt đầu chung cho nhóm đang cùng học một môn.</p><div class="hb-start-price">Cho nhóm học tập</div><ul><li>Chia sẻ chủ đề cần ôn tập</li><li>Thảo luận trên cùng một mạch bài</li><li>Phối hợp chuẩn bị cho kỳ kiểm tra</li></ul><a href="lien-he.html" class="btn btn-outline btn-block">Trao đổi với HocBot <span>→</span></a><small>Liên hệ để trao đổi về nhu cầu nhóm</small></article>
+        </div>
+        <p class="hb-pricing-note">Các lựa chọn và thông tin chi tiết sẽ được cập nhật theo phiên bản HocBot đang sử dụng.</p>
+      </div>
+    </section>
+
+    <section class="hb-guides section">
+      <div class="container">
+        <div class="hb-guide-heading"><div><p class="hb-eyebrow">Gợi ý cách sử dụng</p><h2>Mỗi buổi học, một điểm bắt đầu tốt.</h2></div><a href="tinh-nang.html" class="hb-text-link">Xem toàn bộ tính năng <span>→</span></a></div>
+        <div class="hb-guide-grid">
+          <a href="tinh-nang.html#feature-summary" class="hb-guide-card"><span class="hb-guide-category">TÀI LIỆU</span><span class="hb-guide-number">01</span><h3>Từ một chồng slide đến phần cần nhớ</h3><p>Đọc ý chính trước, rồi quay lại từng khái niệm theo môn học.</p><span class="hb-guide-arrow">↗</span></a>
+          <a href="tinh-nang.html#feature-chat" class="hb-guide-card"><span class="hb-guide-category">HỎI ĐÁP</span><span class="hb-guide-number">02</span><h3>Biến câu hỏi ngắn thành cuộc trao đổi hữu ích</h3><p>Thêm ví dụ, hỏi tiếp và làm rõ chỗ chưa thông suốt.</p><span class="hb-guide-arrow">↗</span></a>
+          <a href="tinh-nang.html#feature-review" class="hb-guide-card"><span class="hb-guide-category">ÔN TẬP</span><span class="hb-guide-number">03</span><h3>Ôn đúng phần còn chưa chắc</h3><p>Tự kiểm tra để biết nên quay lại chủ đề nào trước kỳ thi.</p><span class="hb-guide-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hb-faq section" id="faq">
+      <div class="container hb-faq-layout">
+        <div class="hb-faq-intro"><p class="hb-eyebrow">Câu hỏi thường gặp</p><h2>Điều bạn muốn biết trước khi bắt đầu.</h2><p>Thông tin cơ bản về cách dùng HocBot trong quá trình học.</p><a href="lien-he.html#faq" class="hb-text-link">Xem thêm câu hỏi <span>→</span></a></div>
+        <div class="hb-faq-list">
+          <details><summary>HocBot có thể giúp tôi học những môn nào?</summary><p>Bạn có thể bắt đầu từ tài liệu hoặc câu hỏi của bất kỳ môn học nào. Hãy kiểm tra lại lời giải và đối chiếu với giáo trình của môn học.</p></details>
+          <details><summary>Tôi cần biết cách viết câu lệnh cho AI không?</summary><p>Không cần. Bạn có thể hỏi bằng tiếng Việt thông thường, sau đó yêu cầu giải thích bằng ví dụ, chia nhỏ từng bước hoặc nói rõ hơn phần chưa hiểu.</p></details>
+          <details><summary>Tôi có thể đưa tài liệu môn học vào HocBot không?</summary><p>HocBot được thiết kế để bạn bắt đầu từ tài liệu học tập và trao đổi về nội dung đó. Các định dạng và giới hạn hỗ trợ phụ thuộc phiên bản đang sử dụng.</p></details>
+          <details><summary>HocBot có làm bài tập thay tôi không?</summary><p>HocBot hỗ trợ giải thích kiến thức, gợi ý cách tiếp cận và giúp rà soát bài viết. Bạn cần tự kiểm tra thông tin và hoàn thiện bài làm của mình.</p></details>
+          <details><summary>Tôi có thể dùng HocBot trên điện thoại không?</summary><p>Giao diện website thích ứng với màn hình điện thoại và máy tính. Một ứng dụng di động riêng chưa được giới thiệu.</p></details>
+          <details><summary>Chi phí sử dụng HocBot là bao nhiêu?</summary><p>Thông tin về lựa chọn sử dụng sẽ được hiển thị trong trang đăng ký theo phiên bản hiện hành. Bạn có thể liên hệ HocBot nếu cần trao đổi trước.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="hb-final-cta">
+      <div class="container hb-final-inner"><div class="hb-final-mark">h</div><div><p class="hb-eyebrow">Sẵn sàng bắt đầu?</p><h2>Học kỳ này, giữ mọi thứ trong một mạch.</h2><p>Tạo không gian cho môn học đầu tiên và bắt đầu từ điều bạn đang cần.</p></div><a href="dang-ky.html" class="btn hb-btn-white">Bắt đầu với HocBot <span>→</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer hb-footer">
+    <div class="container">
+      <div class="hb-footer-main">
+        <div class="hb-footer-brand"><a href="index.html" class="logo hb-logo"><span class="hb-logo-mark">h</span>Hoc<span>Bot</span></a><p>Một không gian học tập để đọc, hỏi, hiểu và ôn tập theo cách của bạn.</p><a class="hb-footer-email" href="mailto:hotro@hocbot.ai">hotro@hocbot.ai <span>↗</span></a></div>
+        <div class="hb-footer-col"><h3>Sản phẩm</h3><a href="#cong-cu">Công cụ học tập</a><a href="#cach-hoat-dong">Cách hoạt động</a><a href="#bang-gia">Lựa chọn sử dụng</a><a href="#faq">Câu hỏi thường gặp</a></div>
+        <div class="hb-footer-col"><h3>Về HocBot</h3><a href="gioi-thieu.html">Giới thiệu</a><a href="tinh-nang.html">Tính năng</a><a href="lien-he.html">Liên hệ</a></div>
+        <div class="hb-footer-col hb-footer-note"><span class="hb-footer-orbit">✳</span><p>Học chủ động hơn, từng câu hỏi một.</p><a href="dang-ky.html">Bắt đầu miễn phí <b>→</b></a></div>
+      </div>
+      <div class="hb-footer-bottom"><span>© 2026 HocBot AI</span><span>Được tạo cho hành trình học tập của bạn.</span><a href="mailto:hotro@hocbot.ai">Gửi email hỗ trợ ↗</a></div>
+    </div>
+  </footer>
+</body>
+</html>
